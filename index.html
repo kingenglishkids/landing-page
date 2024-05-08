@@ -248,9 +248,13 @@
     }
 
     function sendFeedback() {
-    // Open a new tab with the desired URL
-    window.open("https://forms.gle/DdiecdZYQH2hqVZN8", "_blank");
-  }
+      // Open a new tab with the desired URL
+      window.open("https://forms.gle/DdiecdZYQH2hqVZN8", "_blank");
+    }
+
+    window.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+    }, false);
   </script>
 
 
