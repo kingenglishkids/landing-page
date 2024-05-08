@@ -47,7 +47,7 @@ color: white;
 background: #10bbf1;
 height: 58px;
 border: 2px solid #10bbf1;
-font: 500 22px "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font: 500 22px "Raleway", 'Chalkboard SE', sans-serif;
 padding: 0 21px;
 -moz-transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
 -ms-transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
