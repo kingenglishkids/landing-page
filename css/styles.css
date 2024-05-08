@@ -324,8 +324,8 @@ overflow: hidden;
   outline: none;
 }
 .video-container {
-  width: 40vw;
-  height: 23vw;
+  width: 45vw;
+  height: 26vw;
   margin-top: 30px;
 }
 .video-container iframe {
