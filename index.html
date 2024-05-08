@@ -14,7 +14,7 @@
   <!-- CSS -->
   <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
-  <link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chalkboard+SE&display=swap">
 
 
   <!-- Favicons -->
@@ -80,9 +80,9 @@
         <div class="col-md-5 col-sm-5">
 
           <!-- Images showcase -->
-          <figure>
-            <img class="img-iPhone" src="images/iphone/2.png" alt="">
-          </figure>
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/OrdJe2zS0iE?rel=0&disablekb=1" frameborder="0" allowfullscreen></iframe>
+          </div>
 
         </div> <!-- /.col-md-5 -->
 
@@ -221,8 +221,6 @@
 
   <script>
     function copyLinkChPlay() {
-     
-
       navigator.clipboard
       .writeText("https://play.google.com/store/apps/details?id=com.vngame.kingenglishkids")
       .then(() => {
