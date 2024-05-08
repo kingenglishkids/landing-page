@@ -324,8 +324,8 @@ overflow: hidden;
   outline: none;
 }
 .video-container {
-  width: 660px;
-  height: 370px; 
+  width: 40vw;
+  height: 23vw;
   margin-top: 30px;
 }
 .video-container iframe {
@@ -390,6 +390,7 @@ margin: 0 10%;
 }
 .video-container {
   width: 93vw;
+  height: 50vw;
   margin-top: 30px;
 }
 .video-container iframe {
