@@ -60,7 +60,7 @@
           <h1>King English Kids</h1>
 
           <!-- Sub title -->
-          <p><b>King English Kids is a free English learning app for children and beginners</b></p>
+          <p><b id="text1">King English Kids is a free English learning app for children and beginners, with over 500,000 users around the world</b></p>
 
           <!-- Button -->
           <div class="buttons-wrapper">
@@ -166,18 +166,18 @@
     <div class="container-footer">
       <div class="row">
         <div class="col-lg-6 col-md-6">
-          <img class="img-iPhone" src="images/iphone/1.png" alt="">
+          <img id="image" class="img-iPhone" src="images/iphone/banner-en.png" alt="">
         </div>
         <div class="col-lg-4 col-md-4 col-md-offset-1">
           <h2>Introduction</h2>
           <div class="features"><!-- Main Points -->
             <i class="line-font blue icon-shield"></i><!-- Main Point Icon -->
 
-            <p>King English Kids is an engaging and user-friendly English learning app designed specifically for
+            <p id="text2">King English Kids is an engaging and user-friendly English learning app designed specifically for
               children. Combining vocabulary learning, listening practice, and English reading exercises, this app
               creates an interactive and enjoyable learning environment, enabling children to effectively grasp
               knowledge while having fun.</p>
-            <p>With the vocabulary learning feature, children can explore new words through vibrant images and lively
+            <p id="text3">With the vocabulary learning feature, children can explore new words through vibrant images and lively
               sounds. The app offers a wide range of topics such as animals, colors, numbers, toys, and more. Children
               will listen to and see English words, along with their pronunciation and meanings. This helps children
               build a strong vocabulary foundation from an early age.</p>
@@ -192,7 +192,7 @@
     <div class="container-footer">
       <div class="row">
         <div class="col-sm-7 footer-copyright">
-          <button type="button" onclick="sendFeedback()">Send Feedback</button>
+          <button id="text4" type="button" onclick="sendFeedback()">Send Feedback</button>
         </div>
 
         <div class="col-sm-7 footer-copyright">
@@ -211,6 +211,27 @@
   <script src="js/customScripts.js"></script>
 
   <script>
+
+    var userLang = navigator.language || navigator.userLanguage;
+
+    if (userLang.startsWith('vi')) {
+        document.documentElement.lang = "vi";
+        document.getElementById('text1').textContent = "King English Kids là ứng dụng học tiếng Anh miễn phí dành cho trẻ em và người mới bắt đầu. Với hơn 500.000 người dùng khắp nơi trên toàn thế giới";
+        document.getElementById('text2').textContent = "King English Kids là một ứng dụng học tiếng Anh thú vị và dễ sử dụng dành cho trẻ em. Với sự kết hợp giữa học từ vựng, luyện nghe và đọc tiếng Anh, ứng dụng này mang lại một môi trường học tập tương tác và hấp dẫn, giúp trẻ em nắm bắt kiến thức một cách hiệu quả và vui nhộn.";
+        document.getElementById('text3').textContent = "Với tính năng học từ vựng, trẻ em có thể khám phá những từ mới thông qua hình ảnh sinh động và âm thanh sống động. Ứng dụng cung cấp các chủ đề phong phú như động vật, màu sắc, số đếm, đồ chơi và nhiều hơn nữa. Trẻ em sẽ được nghe và nhìn các từ tiếng Anh, cùng với phiên âm và nghĩa của chúng. Điều này giúp trẻ em xây dựng nền tảng từ vựng vững chắc từ nhỏ.";
+        document.getElementById('text4').textContent = "Gửi phản hồi"
+        var img = document.getElementById('image');
+        img.src = 'images/iphone/banner-vi.png';
+      } else {
+        document.documentElement.lang = "en";
+        document.getElementById('text1').textContent = "King English Kids is a free English learning app for children and beginners, with over 500,000 users around the world";
+        document.getElementById('text2').textContent = "King English Kids is an engaging and user-friendly English learning app designed specifically for children. Combining vocabulary learning, listening practice, and English reading exercises, this app creates an interactive and enjoyable learning environment, enabling children to effectively grasp knowledge while having fun.";
+        document.getElementById('text3').textContent = "With the vocabulary learning feature, children can explore new words through vibrant images and lively sounds. The app offers a wide range of topics such as animals, colors, numbers, toys, and more. Children will listen to and see English words, along with their pronunciation and meanings. This helps children build a strong vocabulary foundation from an early age.";
+        document.getElementById('text4').textContent = "Send Feedback"
+        var img = document.getElementById('image');
+        img.src = 'images/iphone/banner-en.png';
+      }
+
     function copyLinkChPlay() {
       navigator.clipboard
       .writeText("https://play.google.com/store/apps/details?id=com.vngame.kingenglishkids")
@@ -235,7 +256,6 @@
     }
 
     function sendFeedback() {
-      // Open a new tab with the desired URL
       window.open("https://forms.gle/DdiecdZYQH2hqVZN8", "_blank");
     }
 
