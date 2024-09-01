@@ -333,9 +333,10 @@ overflow: hidden;
   height: 100%;
 }
 .button-play {
-  padding: 10px 10px;
+  padding: 0px 0px;
+  margin: 10px;
   font-size: 16px;
-  background-color: #47C0BA;
+  background-color: #27f1f1;
   color: white;
   border: none;
   border-radius: 20px;
@@ -347,7 +348,7 @@ overflow: hidden;
       transform: scale(1);
   }
   50% {
-      transform: scale(1.1); /* Phóng to */
+      transform: scale(1.05); /* Phóng to */
   }
   100% {
       transform: scale(1);
@@ -419,9 +420,10 @@ margin: 0 10%;
   height: 100%;
 }
 .button-play {
-  padding: 10px 10px;
+  padding: 0px 0px;
+  margin: 10px;
   font-size: 16px;
-  background-color: #47C0BA;
+  background-color: #27f1f1;
   color: white;
   border: none;
   border-radius: 20px;
@@ -433,7 +435,7 @@ margin: 0 10%;
       transform: scale(1);
   }
   50% {
-      transform: scale(1.1); /* Phóng to */
+      transform: scale(1.05); /* Phóng to */
   }
   100% {
       transform: scale(1);
