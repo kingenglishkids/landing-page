@@ -15,6 +15,7 @@
   <!-- CSS -->
   <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
+  <link href="css/slide.css" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chalkboard+SE&display=swap">
 
 
@@ -172,7 +173,100 @@
     <div class="container-footer">
       <div class="row">
         <div class="col-lg-6 col-md-6">
-          <img id="image" class="img-iPhone" src="images/iphone/banner-en.png" alt="">
+
+
+          <div class="slideshow-container">
+
+            <div class="mySlides">
+              <img src="images/slide/slide1.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <img src="images/slide/slide2.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <img src="images/slide/slide3.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <img src="images/slide/slide4.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <img src="images/slide/slide5.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <img src="images/slide/slide6.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <img src="images/slide/slide7.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <img src="images/slide/slide8.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <img src="images/slide/slide9.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <img src="images/slide/slide10.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <img src="images/slide/slide11.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <img src="images/slide/slide12.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <img src="images/slide/slide13.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <img src="images/slide/slide14.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <img src="images/slide/slide15.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <img src="images/slide/slide16.png" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+          </div>
+          <br>
+
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+            <span class="dot" onclick="currentSlide(11)"></span>
+            <span class="dot" onclick="currentSlide(12)"></span>
+            <span class="dot" onclick="currentSlide(13)"></span>
+            <span class="dot" onclick="currentSlide(14)"></span>
+            <span class="dot" onclick="currentSlide(15)"></span>
+            <span class="dot" onclick="currentSlide(16)"></span>
+          </div>
+
+
         </div>
         <div class="col-lg-4 col-md-4 col-md-offset-1">
           <h2 id="text5">Introduction</h2>
@@ -217,9 +311,8 @@
   <script src="js/jquery-2.1.0.min.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
   <script src="js/customScripts.js"></script>
-
+  <script src="js/slide.js"></script>
   <script>
-
     var userLang = navigator.language || navigator.userLanguage;
 
     if (userLang.startsWith('vi')) {
@@ -229,8 +322,6 @@
       document.getElementById('text3').textContent = "Với tính năng học từ vựng, trẻ em có thể khám phá những từ mới thông qua hình ảnh sinh động và âm thanh sống động. Ứng dụng cung cấp các chủ đề phong phú như động vật, màu sắc, số đếm, đồ chơi và nhiều hơn nữa. Trẻ em sẽ được nghe và nhìn các từ tiếng Anh, cùng với phiên âm và nghĩa của chúng. Điều này giúp trẻ em xây dựng nền tảng từ vựng vững chắc từ nhỏ.";
       document.getElementById('text4').textContent = "Gửi phản hồi"
       document.getElementById('text5').textContent = "Giới thiệu"
-      var img = document.getElementById('image');
-      img.src = 'images/iphone/banner-vi.png';
     }
 
     if (userLang.startsWith('ar')) {
@@ -240,8 +331,6 @@
       document.getElementById('text3').textContent = "مع ميزة تعلم المفردات، يمكن للأطفال استكشاف كلمات جديدة من خلال صور نابضة بالحياة وأصوات مفعمة بالحيوية. يوفر التطبيق مجموعة واسعة من المواضيع مثل الحيوانات، الألوان، الأرقام، الألعاب، والمزيد. سيستمع الأطفال إلى الكلمات الإنجليزية ويرونها مع نطقها ومعانيها. يساعد هذا الأطفال على بناء أساس قوي للمفردات منذ سن مبكرة.";
       document.getElementById('text4').textContent = "إرسال ملاحظات";
       document.getElementById('text5').textContent = "مقدمة";
-      var img = document.getElementById('image');
-      img.src = 'images/iphone/banner-en.png';
     }
 
     if (userLang.startsWith('in')) {
@@ -251,8 +340,6 @@
       document.getElementById('text3').textContent = "शब्दावली सीखने की सुविधा के साथ, बच्चे जीवंत चित्रों और जीवंत ध्वनियों के माध्यम से नए शब्दों का अन्वेषण कर सकते हैं। ऐप जानवरों, रंगों, संख्याओं, खिलौनों और अन्य कई विषयों की एक विस्तृत श्रृंखला प्रदान करता है। बच्चे अंग्रेजी शब्दों को सुनेंगे और देखेंगे, साथ ही उनके उच्चारण और अर्थ को भी जानेंगे। इससे बच्चों को कम उम्र से ही एक मजबूत शब्दावली आधार बनाने में मदद मिलती है।";
       document.getElementById('text4').textContent = "प्रतिक्रिया भेजें";
       document.getElementById('text5').textContent = "परिचय";
-      var img = document.getElementById('image');
-      img.src = 'images/iphone/banner-en.png';
     }
 
     if (userLang.startsWith('es')) {
@@ -262,8 +349,6 @@
       document.getElementById('text3').textContent = "Con la función de aprendizaje de vocabulario, los niños pueden explorar nuevas palabras a través de imágenes vibrantes y sonidos animados. La aplicación ofrece una amplia gama de temas como animales, colores, números, juguetes y más. Los niños escucharán y verán palabras en inglés, junto con su pronunciación y significados. Esto ayuda a los niños a construir una base sólida de vocabulario desde una edad temprana.";
       document.getElementById('text4').textContent = "Enviar comentarios";
       document.getElementById('text5').textContent = "Introducción";
-      var img = document.getElementById('image');
-      img.src = 'images/iphone/banner-en.png';
     }
 
     if (userLang.startsWith('fr')) {
@@ -273,8 +358,6 @@
       document.getElementById('text3').textContent = "Avec la fonctionnalité d'apprentissage du vocabulaire, les enfants peuvent explorer de nouveaux mots à travers des images colorées et des sons animés. L'application propose une large gamme de thèmes tels que les animaux, les couleurs, les chiffres, les jouets et bien plus encore. Les enfants écouteront et verront les mots anglais, ainsi que leur prononciation et leur signification. Cela aide les enfants à se constituer une base solide de vocabulaire dès le plus jeune âge.";
       document.getElementById('text4').textContent = "Envoyer des commentaires";
       document.getElementById('text5').textContent = "Introduction";
-      var img = document.getElementById('image');
-      img.src = 'images/iphone/banner-en.png';
     }
 
     if (userLang.startsWith('ja')) {
@@ -284,8 +367,6 @@
       document.getElementById('text3').textContent = "語彙学習機能を使って、子供たちは鮮やかな画像や生き生きとした音を通じて新しい言葉を探求できます。このアプリは、動物、色、数字、おもちゃなど、さまざまなトピックを提供しています。子供たちは英単語を聞いたり見たりして、発音や意味を学びます。これにより、子供たちは幼い頃から強固な語彙の基礎を築くことができます。";
       document.getElementById('text4').textContent = "フィードバックを送信";
       document.getElementById('text5').textContent = "紹介";
-      var img = document.getElementById('image');
-      img.src = 'images/iphone/banner-en.png';
     }
 
     if (userLang.startsWith('ko')) {
@@ -295,8 +376,6 @@
       document.getElementById('text3').textContent = "어휘 학습 기능을 통해 어린이들은 생동감 넘치는 이미지와 활기찬 소리를 통해 새로운 단어를 탐색할 수 있습니다. 이 앱은 동물, 색깔, 숫자, 장난감 등 다양한 주제를 제공합니다. 어린이들은 영어 단어를 듣고 보고 발음과 의미를 함께 배웁니다. 이는 어린이들이 어릴 때부터 강력한 어휘 기초를 다지는 데 도움을 줍니다.";
       document.getElementById('text4').textContent = "피드백 보내기";
       document.getElementById('text5').textContent = "소개";
-      var img = document.getElementById('image');
-      img.src = 'images/iphone/banner-en.png';
     }
 
     if (userLang.startsWith('zh')) {
@@ -306,8 +385,6 @@
       document.getElementById('text3').textContent = "通过词汇学习功能，孩子们可以通过生动的图片和活泼的声音探索新词汇。该应用提供了广泛的主题，如动物、颜色、数字、玩具等。孩子们会听到和看到英语单词，并了解其发音和含义。这有助于孩子们从小就建立坚实的词汇基础。";
       document.getElementById('text4').textContent = "发送反馈";
       document.getElementById('text5').textContent = "简介";
-      var img = document.getElementById('image');
-      img.src = 'images/iphone/banner-en.png';
     }
 
     if (userLang.startsWith('ms')) {
@@ -317,8 +394,6 @@
       document.getElementById('text3').textContent = "Dengan ciri pembelajaran kosa kata, kanak-kanak boleh meneroka perkataan baharu melalui imej yang terang dan bunyi yang ceria. Aplikasi ini menawarkan pelbagai topik seperti haiwan, warna, nombor, mainan dan banyak lagi. Kanak-kanak akan mendengar dan melihat perkataan bahasa Inggeris bersama-sama sebutan dan maknanya. Ini membantu kanak-kanak membina asas kosa kata yang kukuh dari usia muda.";
       document.getElementById('text4').textContent = "Hantar Maklum Balas";
       document.getElementById('text5').textContent = "Pengenalan";
-      var img = document.getElementById('image');
-      img.src = 'images/iphone/banner-en.png';
     }
 
     if (userLang.startsWith('id')) {
@@ -339,8 +414,6 @@
       document.getElementById('text3').textContent = "С помощью функции изучения словарного запаса дети могут исследовать новые слова через яркие изображения и живые звуки. Приложение предлагает широкий выбор тем, таких как животные, цвета, числа, игрушки и многое другое. Дети будут слышать и видеть английские слова, а также их произношение и значения. Это помогает детям создавать прочную основу словарного запаса с раннего возраста.";
       document.getElementById('text4').textContent = "Отправить отзыв";
       document.getElementById('text5').textContent = "Введение";
-      var img = document.getElementById('image');
-      img.src = 'images/iphone/banner-en.png';
     }
 
     if (userLang.startsWith('bn')) {
@@ -350,8 +423,6 @@
       document.getElementById('text3').textContent = "শব্দভান্ডার শেখার বৈশিষ্ট্যের সাহায্যে, শিশুরা জীবন্ত চিত্র এবং প্রাণবন্ত শব্দের মাধ্যমে নতুন শব্দগুলি আবিষ্কার করতে পারে। অ্যাপটি বিভিন্ন বিষয় যেমন প্রাণী, রঙ, সংখ্যা, খেলনা এবং আরও অনেক কিছু প্রদান করে। শিশুরা ইংরেজি শব্দ শুনবে এবং দেখবে, পাশাপাশি তাদের উচ্চারণ এবং অর্থও শিখবে। এটি শিশুদেরকে ছোটবেলা থেকেই একটি শক্তিশালী শব্দভান্ডার ভিত্তি গড়তে সহায়তা করে।";
       document.getElementById('text4').textContent = "মতামত পাঠান";
       document.getElementById('text5').textContent = "পরিচিতি";
-      var img = document.getElementById('image');
-      img.src = 'images/iphone/banner-en.png';
     }
 
     if (userLang.startsWith('pt')) {
@@ -361,8 +432,6 @@
       document.getElementById('text3').textContent = "Com o recurso de aprendizado de vocabulário, as crianças podem explorar novas palavras através de imagens vibrantes e sons animados. O aplicativo oferece uma ampla gama de tópicos, como animais, cores, números, brinquedos e muito mais. As crianças ouvirão e verão palavras em inglês, junto com sua pronúncia e significados. Isso ajuda as crianças a construir uma base sólida de vocabulário desde cedo.";
       document.getElementById('text4').textContent = "Enviar Feedback";
       document.getElementById('text5').textContent = "Introdução";
-      var img = document.getElementById('image');
-      img.src = 'images/iphone/banner-en.png';
     }
 
     if (userLang.startsWith('ur')) {
@@ -372,8 +441,6 @@
       document.getElementById('text3').textContent = "الفاظ کے سیکھنے کی خصوصیت کے ساتھ، بچے زندگی سے بھرپور تصاویر اور خوشگوار آوازوں کے ذریعے نئے الفاظ تلاش کر سکتے ہیں۔ ایپ مختلف موضوعات جیسے کہ جانور، رنگ، نمبر، کھلونے اور بہت کچھ فراہم کرتی ہے۔ بچے انگریزی الفاظ سنیں گے اور دیکھیں گے، ساتھ ہی ان کے تلفظ اور معانی بھی سیکھیں گے۔ یہ بچوں کو کم عمری سے ہی مضبوط الفاظ کی بنیاد بنانے میں مدد دیتا ہے۔";
       document.getElementById('text4').textContent = "فیڈبیک بھیجیں";
       document.getElementById('text5').textContent = "تعارف";
-      var img = document.getElementById('image');
-      img.src = 'images/iphone/banner-en.png';
     }
 
     if (userLang.startsWith('th')) {
@@ -383,8 +450,6 @@
       document.getElementById('text3').textContent = "ด้วยฟีเจอร์การเรียนรู้คำศัพท์ เด็ก ๆ สามารถสำรวจคำใหม่ ๆ ผ่านภาพที่มีสีสันและเสียงที่สดใส แอปนี้มีหัวข้อหลากหลาย เช่น สัตว์ สี ตัวเลข ของเล่น และอื่น ๆ เด็ก ๆ จะได้ยินและเห็นคำภาษาอังกฤษ พร้อมทั้งการออกเสียงและความหมาย การเรียนรู้เหล่านี้ช่วยให้เด็ก ๆ สร้างพื้นฐานคำศัพท์ที่แข็งแกร่งตั้งแต่อายุยังน้อย";
       document.getElementById('text4').textContent = "ส่งข้อเสนอแนะ";
       document.getElementById('text5').textContent = "แนะนำ";
-      var img = document.getElementById('image');
-      img.src = 'images/iphone/banner-en.png';
     }
 
     if (userLang.startsWith('en')) {
@@ -394,8 +459,6 @@
       document.getElementById('text3').textContent = "With the vocabulary learning feature, children can explore new words through vibrant images and lively sounds. The app offers a wide range of topics such as animals, colors, numbers, toys, and more. Children will listen to and see English words, along with their pronunciation and meanings. This helps children build a strong vocabulary foundation from an early age.";
       document.getElementById('text4').textContent = "Send Feedback"
       document.getElementById('text5').textContent = "Introduction"
-      var img = document.getElementById('image');
-      img.src = 'images/iphone/banner-en.png';
     }
 
     function copyLinkChPlay() {
@@ -424,6 +487,7 @@
     function sendFeedback() {
       window.open("https://forms.gle/DdiecdZYQH2hqVZN8", "_blank");
     }
+
 
     window.addEventListener('contextmenu', function (e) {
       e.preventDefault();
