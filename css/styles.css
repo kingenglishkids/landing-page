@@ -279,14 +279,30 @@ header .buttons-wrapper {
 
 .button-play {
   padding: 0px 0px;
-  margin: 10px;
+  margin-top: 22px;
+  margin-bottom: 22px;
   font-size: 16px;
-  background-color: #27f1f1;
+  background-color: #FF7F00;
   color: white;
   border: none;
   border-radius: 20px;
   cursor: pointer;
   animation: pulsate 1s infinite;
+}
+
+.row-button-play {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 16px;
+
+}
+
+.icon-button-play {
+  width: 60px;
+  height: 60px;
+  margin-right: 16px;
 }
 
 @keyframes pulsate {
@@ -371,9 +387,10 @@ header .buttons-wrapper {
 
   .button-play {
     padding: 0px 0px;
-    margin: 10px;
+    margin-top: 22px;
+    margin-bottom: 22px;
     font-size: 16px;
-    background-color: #27f1f1;
+    background-color: #FF7F00;
     color: white;
     border: none;
     border-radius: 20px;

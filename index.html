@@ -67,17 +67,12 @@
 
           <!-- Button -->
           <div class="buttons-wrapper">
-            <button class="button-play">
-              <a href="https://play.google.com/store/apps/details?id=com.vngame.kingenglishkids" target="_blank">
-                <img src="images/chplay.png" alt="">
-              </a>
-
-
-              <button class="button-play">
-                <a href="https://apps.apple.com/app/id6449469018" target="_blank">
-                  <img src="images/appstore.png" alt="">
-                </a>
-              </button>
+            <button class="button-play" onclick="openStore()">
+              <div class="row-button-play">
+                <img class="icon-button-play" src="images/icons/download.png" alt="">
+                <h1 id="download">Download the app</h1>
+              </div>
+            </button>
           </div>
           <!-- /.btn-app-store -->
 
@@ -249,8 +244,16 @@
               will listen to and see English words, along with their pronunciation and meanings. This helps children
               build a strong vocabulary foundation from an early age.</p>
           </div><!-- End Main Points -->
+
+          <button class="button-play" onclick="openStore()">
+            <div class="row-button-play">
+              <img class="icon-button-play" src="images/icons/download.png" alt="">
+              <h1 id="download">Download the app</h1>
+            </div>
+          </button>
         </div>
       </div>
+
     </div> <!-- /.container -->
   </section> <!-- /.ourFeatures -->
 
@@ -286,8 +289,9 @@
       document.getElementById('text1').textContent = "King English Kids - Ứng dụng cho trẻ em học tiếng Anh và nâng cao trí thông minh!";
       document.getElementById('text2').textContent = "King English Kids là một ứng dụng học tiếng Anh thú vị và dễ sử dụng dành cho trẻ em. Với sự kết hợp giữa học từ vựng, luyện nghe và đọc tiếng Anh, ứng dụng này mang lại một môi trường học tập tương tác và hấp dẫn, giúp trẻ em nắm bắt kiến thức một cách hiệu quả và vui nhộn.";
       document.getElementById('text3').textContent = "Với tính năng học từ vựng, trẻ em có thể khám phá những từ mới thông qua hình ảnh sinh động và âm thanh sống động. Ứng dụng cung cấp các chủ đề phong phú như động vật, màu sắc, số đếm, đồ chơi và nhiều hơn nữa. Trẻ em sẽ được nghe và nhìn các từ tiếng Anh, cùng với phiên âm và nghĩa của chúng. Điều này giúp trẻ em xây dựng nền tảng từ vựng vững chắc từ nhỏ.";
-      document.getElementById('text4').textContent = "Gửi phản hồi"
-      document.getElementById('text5').textContent = "Giới thiệu"
+      document.getElementById('text4').textContent = "Gửi phản hồi";
+      document.getElementById('text5').textContent = "Giới thiệu";
+      document.getElementById('download').textContent = "Tải ứng dụng";
     }
 
     // Tiếng Ả Rập (Arabic)
@@ -298,17 +302,20 @@
       document.getElementById('text3').textContent = "مع ميزة تعلم المفردات، يمكن للأطفال استكشاف كلمات جديدة من خلال صور نابضة بالحياة وأصوات مفعمة بالحيوية. يوفر التطبيق مجموعة واسعة من المواضيع مثل الحيوانات، الألوان، الأرقام، الألعاب، والمزيد. سيستمع الأطفال إلى الكلمات الإنجليزية ويرونها مع نطقها ومعانيها. يساعد هذا الأطفال على بناء أساس قوي للمفردات منذ سن مبكرة.";
       document.getElementById('text4').textContent = "إرسال ملاحظات";
       document.getElementById('text5').textContent = "مقدمة";
+      document.getElementById('download').textContent = "تحميل التطبيق";
     }
 
     // Tiếng Hindi (Hindi)
-    if (userLang.startsWith('in')) {
-      document.documentElement.lang = "in";
+    if (userLang.startsWith('hi')) {
+      document.documentElement.lang = "hi";
       document.getElementById('text1').textContent = "King English Kids - बच्चों के लिए अंग्रेजी सीखने और उनकी बुद्धिमत्ता बढ़ाने के लिए एक ऐप!";
       document.getElementById('text2').textContent = "King English Kids एक आकर्षक और उपयोगकर्ता के अनुकूल अंग्रेजी सीखने का ऐप है, जिसे विशेष रूप से बच्चों के लिए डिज़ाइन किया गया है। यह ऐप शब्दावली सीखने, सुनने का अभ्यास, और अंग्रेजी पढ़ने के अभ्यास को मिलाकर एक इंटरैक्टिव और आनंददायक शिक्षण वातावरण बनाता है, जिससे बच्चे मज़े के साथ ज्ञान को प्रभावी ढंग से ग्रहण कर सकते हैं।";
       document.getElementById('text3').textContent = "शब्दावली सीखने की सुविधा के साथ, बच्चे जीवंत चित्रों और जीवंत ध्वनियों के माध्यम से नए शब्दों का अन्वेषण कर सकते हैं। ऐप जानवरों, रंगों, संख्याओं, खिलौनों और अन्य कई विषयों की एक विस्तृत श्रृंखला प्रदान करता है। बच्चे अंग्रेजी शब्दों को सुनेंगे और देखेंगे, साथ ही उनके उच्चारण और अर्थ को भी जानेंगे। इससे बच्चों को कम उम्र से ही एक मजबूत शब्दावली आधार बनाने में मदद मिलती है।";
       document.getElementById('text4').textContent = "प्रतिक्रिया भेजें";
       document.getElementById('text5').textContent = "परिचय";
+      document.getElementById('download').textContent = "ऐप डाउनलोड करें";
     }
+
 
     // Tiếng Tây Ban Nha (Spanish)
     if (userLang.startsWith('es')) {
@@ -318,7 +325,9 @@
       document.getElementById('text3').textContent = "Con la función de aprendizaje de vocabulario, los niños pueden explorar nuevas palabras a través de imágenes vibrantes y sonidos animados. La aplicación ofrece una amplia gama de temas como animales, colores, números, juguetes y más. Los niños escucharán y verán palabras en inglés, junto con su pronunciación y significados. Esto ayuda a los niños a construir una base sólida de vocabulario desde una edad temprana.";
       document.getElementById('text4').textContent = "Enviar comentarios";
       document.getElementById('text5').textContent = "Introducción";
+      document.getElementById('download').textContent = "Descargar la aplicación";
     }
+
 
     // Tiếng Pháp (French)
     if (userLang.startsWith('fr')) {
@@ -328,6 +337,7 @@
       document.getElementById('text3').textContent = "Avec la fonctionnalité d'apprentissage du vocabulaire, les enfants peuvent explorer de nouveaux mots à travers des images colorées et des sons animés. L'application propose une large gamme de thèmes tels que les animaux, les couleurs, les chiffres, les jouets et bien plus encore. Les enfants écouteront et verront les mots anglais, ainsi que leur prononciation et leur signification. Cela aide les enfants à se constituer une base solide de vocabulaire dès le plus jeune âge.";
       document.getElementById('text4').textContent = "Envoyer des commentaires";
       document.getElementById('text5').textContent = "Introduction";
+      document.getElementById('download').textContent = "Télécharger l'application";
     }
 
     // Tiếng Nhật (Japanese)
@@ -338,6 +348,7 @@
       document.getElementById('text3').textContent = "語彙学習機能を使って、子供たちは鮮やかな画像や生き生きとした音を通じて新しい言葉を探求できます。このアプリは、動物、色、数字、おもちゃなど、さまざまなトピックを提供しています。子供たちは英単語を聞いたり見たりして、発音や意味を学びます。これにより、子供たちは幼い頃から強固な語彙の基礎を築くことができます。";
       document.getElementById('text4').textContent = "フィードバックを送信";
       document.getElementById('text5').textContent = "紹介";
+      document.getElementById('download').textContent = "アプリをダウンロード";
     }
 
     // Tiếng Hàn (Korean)
@@ -348,6 +359,7 @@
       document.getElementById('text3').textContent = "어휘 학습 기능을 통해 어린이들은 생동감 넘치는 이미지와 활기찬 소리를 통해 새로운 단어를 탐색할 수 있습니다. 이 앱은 동물, 색깔, 숫자, 장난감 등 다양한 주제를 제공합니다. 어린이들은 영어 단어를 듣고 보고 발음과 의미를 함께 배웁니다. 이는 어린이들이 어릴 때부터 강력한 어휘 기초를 다지는 데 도움을 줍니다.";
       document.getElementById('text4').textContent = "피드백 보내기";
       document.getElementById('text5').textContent = "소개";
+      document.getElementById('download').textContent = "앱 다운로드";
     }
 
     // Tiếng Trung (Chinese)
@@ -358,6 +370,7 @@
       document.getElementById('text3').textContent = "通过词汇学习功能，孩子们可以通过生动的图片和活泼的声音探索新词汇。该应用提供了广泛的主题，如动物、颜色、数字、玩具等。孩子们会听到和看到英语单词，并了解其发音和含义。这有助于孩子们从小就建立坚实的词汇基础。";
       document.getElementById('text4').textContent = "发送反馈";
       document.getElementById('text5').textContent = "简介";
+      document.getElementById('download').textContent = "下载应用";
     }
 
     // Tiếng Malaysia (Malay)
@@ -368,6 +381,7 @@
       document.getElementById('text3').textContent = "Dengan ciri pembelajaran kosa kata, kanak-kanak boleh meneroka perkataan baharu melalui imej yang terang dan bunyi yang ceria. Aplikasi ini menawarkan pelbagai topik seperti haiwan, warna, nombor, mainan dan banyak lagi. Kanak-kanak akan mendengar dan melihat perkataan bahasa Inggeris bersama-sama sebutan dan maknanya. Ini membantu kanak-kanak membina asas kosa kata yang kukuh dari usia muda.";
       document.getElementById('text4').textContent = "Hantar Maklum Balas";
       document.getElementById('text5').textContent = "Pengenalan";
+      document.getElementById('download').textContent = "Muat turun aplikasi";
     }
 
     // Tiếng Indonesia (Indonesian)
@@ -378,8 +392,7 @@
       document.getElementById('text3').textContent = "Dengan fitur pembelajaran kosakata, anak-anak dapat menjelajahi kata-kata baru melalui gambar yang hidup dan suara yang ceria. Aplikasi ini menawarkan berbagai topik seperti hewan, warna, angka, mainan, dan banyak lagi. Anak-anak akan mendengar dan melihat kata-kata dalam bahasa Inggris, bersama dengan pengucapan dan maknanya. Ini membantu anak-anak membangun dasar kosakata yang kuat sejak usia dini.";
       document.getElementById('text4').textContent = "Kirim Umpan Balik";
       document.getElementById('text5').textContent = "Pengantar";
-      var img = document.getElementById('image');
-      img.src = 'images/iphone/banner-en.png';
+      document.getElementById('download').textContent = "Unduh aplikasi";
     }
 
     // Tiếng Nga (Russian)
@@ -390,6 +403,7 @@
       document.getElementById('text3').textContent = "С помощью функции изучения словарного запаса дети могут исследовать новые слова через яркие изображения и живые звуки. Приложение предлагает широкий выбор тем, таких как животные, цвета, числа, игрушки и многое другое. Дети будут слышать и видеть английские слова, а также их произношение и значения. Это помогает детям создавать прочную основу словарного запаса с раннего возраста.";
       document.getElementById('text4').textContent = "Отправить отзыв";
       document.getElementById('text5').textContent = "Введение";
+      document.getElementById('download').textContent = "Скачать приложение";
     }
 
     // Tiếng Bengali (Bengali)
@@ -400,6 +414,7 @@
       document.getElementById('text3').textContent = "শব্দভান্ডার শেখার বৈশিষ্ট্যের সাহায্যে, শিশুরা জীবন্ত চিত্র এবং প্রাণবন্ত শব্দের মাধ্যমে নতুন শব্দগুলি আবিষ্কার করতে পারে। অ্যাপটি বিভিন্ন বিষয় যেমন প্রাণী, রঙ, সংখ্যা, খেলনা এবং আরও অনেক কিছু প্রদান করে। শিশুরা ইংরেজি শব্দ শুনবে এবং দেখবে, পাশাপাশি তাদের উচ্চারণ এবং অর্থও শিখবে। এটি শিশুদেরকে ছোটবেলা থেকেই একটি শক্তিশালী শব্দভান্ডার ভিত্তি গড়তে সহায়তা করে।";
       document.getElementById('text4').textContent = "মতামত পাঠান";
       document.getElementById('text5').textContent = "পরিচিতি";
+      document.getElementById('download').textContent = "অ্যাপ ডাউনলোড করুন";
     }
 
     // Tiếng Bồ Đào Nha (Portuguese)
@@ -410,6 +425,7 @@
       document.getElementById('text3').textContent = "Com o recurso de aprendizado de vocabulário, as crianças podem explorar novas palavras através de imagens vibrantes e sons animados. O aplicativo oferece uma ampla gama de tópicos, como animais, cores, números, brinquedos e muito mais. As crianças ouvirão e verão palavras em inglês, junto com sua pronúncia e significados. Isso ajuda as crianças a construir uma base sólida de vocabulário desde cedo.";
       document.getElementById('text4').textContent = "Enviar Feedback";
       document.getElementById('text5').textContent = "Introdução";
+      document.getElementById('download').textContent = "Baixar o aplicativo";
     }
 
     // Tiếng Urdu (Urdu)
@@ -420,6 +436,7 @@
       document.getElementById('text3').textContent = "الفاظ کے سیکھنے کی خصوصیت کے ساتھ، بچے زندگی سے بھرپور تصاویر اور خوشگوار آوازوں کے ذریعے نئے الفاظ تلاش کر سکتے ہیں۔ ایپ مختلف موضوعات جیسے کہ جانور، رنگ، نمبر، کھلونے اور بہت کچھ فراہم کرتی ہے۔ بچے انگریزی الفاظ سنیں گے اور دیکھیں گے، ساتھ ہی ان کے تلفظ اور معانی بھی سیکھیں گے۔ یہ بچوں کو کم عمری سے ہی مضبوط الفاظ کی بنیاد بنانے میں مدد دیتا ہے۔";
       document.getElementById('text4').textContent = "فیڈبیک بھیجیں";
       document.getElementById('text5').textContent = "تعارف";
+      document.getElementById('download').textContent = "ایپ ڈاؤن لوڈ کریں";
     }
 
     // Tiếng Thái (Thai)
@@ -430,6 +447,7 @@
       document.getElementById('text3').textContent = "ด้วยฟีเจอร์การเรียนรู้คำศัพท์ เด็ก ๆ สามารถสำรวจคำใหม่ ๆ ผ่านภาพที่มีสีสันและเสียงที่สดใส แอปนี้มีหัวข้อหลากหลาย เช่น สัตว์ สี ตัวเลข ของเล่น และอื่น ๆ เด็ก ๆ จะได้ยินและเห็นคำภาษาอังกฤษ พร้อมทั้งการออกเสียงและความหมาย การเรียนรู้เหล่านี้ช่วยให้เด็ก ๆ สร้างพื้นฐานคำศัพท์ที่แข็งแกร่งตั้งแต่อายุยังน้อย";
       document.getElementById('text4').textContent = "ส่งข้อเสนอแนะ";
       document.getElementById('text5').textContent = "แนะนำ";
+      document.getElementById('download').textContent = "ดาวน์โหลดแอป";
     }
 
     // Tiếng Anh (English)
@@ -440,8 +458,9 @@
       document.getElementById('text3').textContent = "With the vocabulary learning feature, children can explore new words through vibrant images and lively sounds. The app offers a wide range of topics such as animals, colors, numbers, toys, and more. Children will listen to and see English words, along with their pronunciation and meanings. This helps children build a strong vocabulary foundation from an early age.";
       document.getElementById('text4').textContent = "Send Feedback"
       document.getElementById('text5').textContent = "Introduction"
+      document.getElementById('download').textContent = "Download the app"
     }
-    
+
     function copyLinkChPlay() {
       navigator.clipboard
         .writeText("https://play.google.com/store/apps/details?id=com.vngame.kingenglishkids")
@@ -469,6 +488,32 @@
       window.open("https://forms.gle/DdiecdZYQH2hqVZN8", "_blank");
     }
 
+
+    function openStore() {
+      const ua = navigator.userAgent || navigator.vendor || window.opera;
+      const platform = navigator.platform.toLowerCase();
+
+      // Điện thoại Android
+      if (/android/i.test(ua)) {
+        window.open("https://play.google.com/store/apps/details?id=com.vngame.kingenglishkids", "_blank");
+      }
+      // Thiết bị Apple (iOS)
+      else if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+        window.open("https://apps.apple.com/app/id6449469018", "_blank");
+      }
+      // Máy tính macOS
+      else if (platform.includes("mac")) {
+        window.open("https://apps.apple.com/app/id6449469018", "_blank");
+      }
+      // Máy tính Windows
+      else if (platform.includes("win")) {
+        window.open("https://play.google.com/store/apps/details?id=com.vngame.kingenglishkids", "_blank");
+      }
+      // Hệ điều hành khác
+      else {
+        alert("Thiết bị không được hỗ trợ.");
+      }
+    }
 
     window.addEventListener('contextmenu', function (e) {
       e.preventDefault();
