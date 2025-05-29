@@ -103,12 +103,8 @@ a.button:hover {
   border-color: #40c9f4;
 }
 
-.buttons-wrapper .button-stripe {
-  margin-left: 14px;
-}
-
 header .buttons-wrapper {
-  padding-top: 53px;
+  padding-top: 30px;
 }
 
 .side-nav {
@@ -162,17 +158,16 @@ header .buttons-wrapper {
 }
 
 .mainBanner .img-logo {
-  display: block;
+  display: initial;
   width: 128px;
   height: 128px;
   margin-top: 50px;
-  margin-bottom: 170px;
 }
 
 .mainBanner h1,
 .mainBanner .h1 {
   font-size: 35px;
-  text-align: left;
+  text-align: center;
   color: #FFFFFF;
   font-weight: bold;
 }
@@ -181,7 +176,7 @@ header .buttons-wrapper {
   margin-bottom: 15px;
   font-size: 20px;
   font-weight: 200;
-  text-align: left;
+  text-align: center;
   color: #FFFFFF;
 }
 
@@ -326,7 +321,6 @@ header .buttons-wrapper {
     width: 128px;
     height: 128px;
     margin-top: 50px;
-    margin-bottom: 40px;
   }
 
   .mainBanner h1,
@@ -339,7 +333,7 @@ header .buttons-wrapper {
 
   .mainBanner p {
     margin-bottom: 15px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 200;
     text-align: center;
     color: #FFFFFF;
@@ -397,6 +391,13 @@ header .buttons-wrapper {
     cursor: pointer;
     animation: pulsate 1s infinite;
   }
+
+  .icon-button-play {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+  }
+
 
   @keyframes pulsate {
     0% {
