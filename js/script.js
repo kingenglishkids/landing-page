@@ -248,6 +248,32 @@ function openStore() {
     }
 }
 
+function openStore2() {
+    const ua = navigator.userAgent || navigator.vendor || window.opera;
+    const platform = navigator.platform.toLowerCase();
+
+    // Điện thoại Android
+    if (/android/i.test(ua)) {
+        window.open("https://play.google.com/store/apps/details?id=com.vngame.kingenglish", "_blank");
+    }
+    // Thiết bị Apple (iOS)
+    else if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+        window.open("https://apps.apple.com/app/1601137730", "_blank");
+    }
+    // Máy tính macOS
+    else if (platform.includes("mac")) {
+        window.open("https://apps.apple.com/app/1601137730", "_blank");
+    }
+    // Máy tính Windows
+    else if (platform.includes("win")) {
+        window.open("https://play.google.com/store/apps/details?id=com.vngame.kingenglish", "_blank");
+    }
+    // Hệ điều hành khác
+    else {
+        alert("Device not supported.");
+    }
+}
+
 window.addEventListener('contextmenu', function (e) {
     e.preventDefault();
 }, false);
