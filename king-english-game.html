@@ -143,10 +143,12 @@
           <div class="features"><!-- Main Points -->
             <i class="line-font blue icon-shield"></i><!-- Main Point Icon -->
 
-            <p id="txt-desc-new-1">King English Game is an engaging and practical game for learning English. Inspired by the
+            <p id="txt-desc-new-1">King English Game is an engaging and practical game for learning English. Inspired by
+              the
               classic crossword puzzle genre, this game not only helps players improve their language skills but also
               provides enjoyable moments of relaxation and fun.</p>
-            <p id="txt-desc-new-2">The game features multiple play modes, including word search, word rearrangement, and word
+            <p id="txt-desc-new-2">The game features multiple play modes, including word search, word rearrangement, and
+              word
               matching. These activities challenge players with questions on English grammar, vocabulary, and sentence
               structures, ranging from simple to advanced, helping to steadily enhance language knowledge.</p>
             <p id="txt-desc-new-3">In addition to the games, King English Game offers a collection of common English
@@ -256,7 +258,54 @@
   <script src="bootstrap/js/bootstrap.min.js"></script>
   <script src="js/customScripts.js"></script>
   <script src="js/slide.js"></script>
-  <script src="js/script.js"></script>
+  <script>
+    window.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+    }, false);
+
+    function openStore2() {
+      const ua = navigator.userAgent || navigator.vendor || window.opera;
+      const platform = navigator.platform.toLowerCase();
+
+      // Điện thoại Android
+      if (/android/i.test(ua)) {
+        window.open("https://play.google.com/store/apps/details?id=com.vngame.kingenglish", "_blank");
+      }
+      // Thiết bị Apple (iOS)
+      else if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+        window.open("https://apps.apple.com/app/1601137730", "_blank");
+      }
+      // Máy tính macOS
+      else if (platform.includes("mac")) {
+        window.open("https://apps.apple.com/app/1601137730", "_blank");
+      }
+      // Máy tính Windows
+      else if (platform.includes("win")) {
+        window.open("https://play.google.com/store/apps/details?id=com.vngame.kingenglish", "_blank");
+      }
+      // Hệ điều hành khác
+      else {
+        alert("Device not supported.");
+      }
+    }
+
+    function sendFeedback() {
+      window.open("https://forms.gle/DdiecdZYQH2hqVZN8", "_blank");
+    }
+
+    var userLang = navigator.language || navigator.userLanguage;
+
+    // Tiếng Việt (Vietnamese)
+    if (userLang.startsWith('vi')) {
+      document.documentElement.lang = "vi";
+      document.getElementById('txt-slogan').textContent = "Ứng dụng cho trẻ em học tiếng Anh và nâng cao trí thông minh!";
+      document.getElementById('txt-desc-1').textContent = "King English Kids là một ứng dụng học tiếng Anh thú vị và dễ sử dụng dành cho trẻ em. Với sự kết hợp giữa học từ vựng, luyện nghe và đọc tiếng Anh, ứng dụng này mang lại một môi trường học tập tương tác và hấp dẫn, giúp trẻ em nắm bắt kiến thức một cách hiệu quả và vui nhộn.";
+      document.getElementById('txt-desc-2').textContent = "Với tính năng học từ vựng, trẻ em có thể khám phá những từ mới thông qua hình ảnh sinh động và âm thanh sống động. Ứng dụng cung cấp các chủ đề phong phú như động vật, màu sắc, số đếm, đồ chơi và nhiều hơn nữa. Trẻ em sẽ được nghe và nhìn các từ tiếng Anh, cùng với phiên âm và nghĩa của chúng. Điều này giúp trẻ em xây dựng nền tảng từ vựng vững chắc từ nhỏ.";
+      document.getElementById('txt-send-feedback').textContent = "Gửi phản hồi";
+      document.getElementById('txt-intro').textContent = "Giới thiệu";
+      document.getElementById('txt-download').textContent = "Tải ứng dụng";
+    }
+  </script>
 
 </body>
 
