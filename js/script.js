@@ -9,6 +9,7 @@ if (userLang.startsWith('vi')) {
     document.getElementById('txt-send-feedback').textContent = "Gửi phản hồi";
     document.getElementById('txt-intro').textContent = "Giới thiệu";
     document.getElementById('txt-download').textContent = "Tải ứng dụng";
+    document.getElementById('txt-download-2').textContent = "Tải ứng dụng";
 }
 
 // Tiếng Ả Rập (Arabic)
@@ -20,6 +21,7 @@ if (userLang.startsWith('ar')) {
     document.getElementById('txt-send-feedback').textContent = "إرسال ملاحظات";
     document.getElementById('txt-intro').textContent = "مقدمة";
     document.getElementById('txt-download').textContent = "تحميل التطبيق";
+    document.getElementById('txt-download-2').textContent = "تحميل التطبيق";
 }
 
 // Tiếng Hindi (Hindi)
@@ -31,6 +33,7 @@ if (userLang.startsWith('hi')) {
     document.getElementById('txt-send-feedback').textContent = "प्रतिक्रिया भेजें";
     document.getElementById('txt-intro').textContent = "परिचय";
     document.getElementById('txt-download').textContent = "ऐप डाउनलोड करें";
+    document.getElementById('txt-download-2').textContent = "ऐप डाउनलोड करें";
 }
 
 
@@ -43,6 +46,7 @@ if (userLang.startsWith('es')) {
     document.getElementById('txt-send-feedback').textContent = "Enviar comentarios";
     document.getElementById('txt-intro').textContent = "Introducción";
     document.getElementById('txt-download').textContent = "Descargar la aplicación";
+    document.getElementById('txt-download-2').textContent = "Descargar la aplicación";
 }
 
 
@@ -55,6 +59,7 @@ if (userLang.startsWith('fr')) {
     document.getElementById('txt-send-feedback').textContent = "Envoyer des commentaires";
     document.getElementById('txt-intro').textContent = "Introduction";
     document.getElementById('txt-download').textContent = "Télécharger l'application";
+    document.getElementById('txt-download-2').textContent = "Télécharger l'application";
 }
 
 // Tiếng Nhật (Japanese)
@@ -66,6 +71,7 @@ if (userLang.startsWith('ja')) {
     document.getElementById('txt-send-feedback').textContent = "フィードバックを送信";
     document.getElementById('txt-intro').textContent = "紹介";
     document.getElementById('txt-download').textContent = "アプリをダウンロード";
+    document.getElementById('txt-download-2').textContent = "アプリをダウンロード";
 }
 
 // Tiếng Hàn (Korean)
@@ -77,6 +83,7 @@ if (userLang.startsWith('ko')) {
     document.getElementById('txt-send-feedback').textContent = "피드백 보내기";
     document.getElementById('txt-intro').textContent = "소개";
     document.getElementById('txt-download').textContent = "앱 다운로드";
+    document.getElementById('txt-download-2').textContent = "앱 다운로드";
 }
 
 // Tiếng Trung (Chinese)
@@ -88,6 +95,7 @@ if (userLang.startsWith('zh')) {
     document.getElementById('txt-send-feedback').textContent = "发送反馈";
     document.getElementById('txt-intro').textContent = "简介";
     document.getElementById('txt-download').textContent = "下载应用";
+    document.getElementById('txt-download-2').textContent = "下载应用";
 }
 
 // Tiếng Malaysia (Malay)
@@ -99,6 +107,7 @@ if (userLang.startsWith('ms')) {
     document.getElementById('txt-send-feedback').textContent = "Hantar Maklum Balas";
     document.getElementById('txt-intro').textContent = "Pengenalan";
     document.getElementById('txt-download').textContent = "Muat turun aplikasi";
+    document.getElementById('txt-download-2').textContent = "Muat turun aplikasi";
 }
 
 // Tiếng Indonesia (Indonesian)
@@ -110,6 +119,7 @@ if (userLang.startsWith('id')) {
     document.getElementById('txt-send-feedback').textContent = "Kirim Umpan Balik";
     document.getElementById('txt-intro').textContent = "Pengantar";
     document.getElementById('txt-download').textContent = "Unduh aplikasi";
+    document.getElementById('txt-download-2').textContent = "Unduh aplikasi";
 }
 
 // Tiếng Nga (Russian)
@@ -121,6 +131,7 @@ if (userLang.startsWith('ru')) {
     document.getElementById('txt-send-feedback').textContent = "Отправить отзыв";
     document.getElementById('txt-intro').textContent = "Введение";
     document.getElementById('txt-download').textContent = "Скачать приложение";
+    document.getElementById('txt-download-2').textContent = "Скачать приложение";
 }
 
 // Tiếng Bengali (Bengali)
@@ -132,6 +143,7 @@ if (userLang.startsWith('bn')) {
     document.getElementById('txt-send-feedback').textContent = "মতামত পাঠান";
     document.getElementById('txt-intro').textContent = "পরিচিতি";
     document.getElementById('txt-download').textContent = "অ্যাপ ডাউনলোড করুন";
+    document.getElementById('txt-download-2').textContent = "অ্যাপ ডাউনলোড করুন";
 }
 
 // Tiếng Bồ Đào Nha (Portuguese)
@@ -143,6 +155,7 @@ if (userLang.startsWith('pt')) {
     document.getElementById('txt-send-feedback').textContent = "Enviar Feedback";
     document.getElementById('txt-intro').textContent = "Introdução";
     document.getElementById('txt-download').textContent = "Baixar o aplicativo";
+    document.getElementById('txt-download-2').textContent = "Baixar o aplicativo";
 }
 
 // Tiếng Urdu (Urdu)
@@ -154,6 +167,8 @@ if (userLang.startsWith('ur')) {
     document.getElementById('txt-send-feedback').textContent = "فیڈبیک بھیجیں";
     document.getElementById('txt-intro').textContent = "تعارف";
     document.getElementById('txt-download').textContent = "ایپ ڈاؤن لوڈ کریں";
+    document.getElementById('txt-download-2').textContent = "ایپ ڈاؤن لوڈ کریں";
+
 }
 
 // Tiếng Thái (Thai)
@@ -165,6 +180,7 @@ if (userLang.startsWith('th')) {
     document.getElementById('txt-send-feedback').textContent = "ส่งข้อเสนอแนะ";
     document.getElementById('txt-intro').textContent = "แนะนำ";
     document.getElementById('txt-download').textContent = "ดาวน์โหลดแอป";
+    document.getElementById('txt-download-2').textContent = "ดาวน์โหลดแอป";
 }
 
 // Tiếng Anh (English)
@@ -176,6 +192,7 @@ if (userLang.startsWith('en')) {
     document.getElementById('txt-send-feedback').textContent = "Send Feedback"
     document.getElementById('txt-intro').textContent = "Introduction"
     document.getElementById('txt-download').textContent = "Download the app"
+    document.getElementById('txt-download-2').textContent = "Download the app"
 }
 
 function sendFeedback() {
